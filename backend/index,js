@@ -1,0 +1,27 @@
+//app requirements and dependencies
+
+const express = require('express');
+const app = express();
+const bodyParser = require('body-parser')
+const cors = require('cors')
+const path = require('path')
+const PORT = 5050;
+const router = require('./router')
+require('dotenv').config();
+const multer = require('multer');
+
+//middleware
+//To parse json data
+app.use(bodyParser.json())
+//allow origin access
+app.use(cors({
+    origin: '*'
+}))
+
+//api
+app.use('/api', router)
+
+//start app on this port
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});

@@ -1,0 +1,309 @@
+:root{
+    --background: rgba(0, 0, 0, 0.9);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 16rem auto 20rem;
+    gap: 1.2rem;
+    background-color: var(--background);
+    transition: 2sec ease-in-out;
+
+}
+.main_content{
+    width: 100%;
+    padding: 1.2rem 2rem;
+    scale: 0.8rem;
+    height: 98vh;
+    margin-top:1rem;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
+.main_content .questionnaire{
+    width: 100%;
+    padding: 1rem 1.7rem;
+}
+.main_content .questionnaire .heading{
+    color: white;
+}
+
+.main_content .questionnaire .menu-items{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    margin-top: 1rem;
+    align-self: center;
+    width: 100%;
+
+}
+
+.main_content .questionnaire .menu-items select{
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(157, 155, 155, 0.299);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1sec ease-in-out;
+}
+
+
+.sidebar-panel{
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    scale: 0.8rem;
+    padding: 1.2rem 0.2rem;
+}
+.sidebar-panel .top{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.sidebar-panel .top img{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 5rem;
+}
+.sidebar-panel ul{
+    margin-top: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.3rem;
+    list-style: none;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    /* border: 3px solid red; */
+    transition: 1sec ease-in-out;
+
+}
+.sidebar-panel ul li{
+    width: 100%;
+    padding: 0.4rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 1sec ease-in-out;
+
+}
+ .active{
+    background-color: rgba(157, 155, 155, 0.299);
+}
+
+.sidebar-panel ul li h3{
+    width: 50%;
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+.sidebar-panel ul li:last-child{
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    background-color: rgba(215, 10, 10, 0.673);
+    padding: 0.7rem 1.2rem;
+
+}
+.sidebar-panel ul li:hover{
+    background-color: rgba(157, 155, 155, 0.299);
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.3rem;
+    width: 100%;
+    padding: 1.2rem 1rem;
+    border-radius: 12px;
+    border: 1px solid rgb(3, 55, 3);
+    background-color: black;
+    color: white;
+    scale: 0.9;
+    transition: 1sec ease-in-out;
+
+}
+.right .header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white
+}
+.right .item-list{
+    border-radius: 9px;
+    padding: 1rem 0.4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    position: relative;
+    height: 85vh;
+    transition: 1000ms ease-in-out;
+
+
+}
+
+.right .item-list .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
+ .heading h3.first{
+    width: 45%;
+
+}
+.right .item-list .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.3rem;
+    align-items: center;
+    padding: 0.4rem 0.1rem;
+    border-radius: 5px;
+    height: 53vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    transition: 1000ms ease-in-out;
+
+}
+.right .item-list .container .item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 0.4rem;
+    background-color: rgba(157, 155, 155, 0.299);
+    border-radius: 5px;
+    margin-top: 0.9rem;
+    transition: 2000ms ease-in-out;
+
+}
+.right .item-list .container .item span{
+ color: white;
+ cursor: pointer;
+}
+ .item h3.first{
+    width: 55%;
+}
+.item-list .total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 0.1rem;
+    width: 100%;
+}
+
+.item-list .total h3.price{
+    color:rgba(215, 10, 10, 0.673);
+}
+
+.item-list .confirm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 0.7rem;
+    /* width: 80%; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.item-list .confirm button {
+    width: 35%;
+    padding: 0.8rem 0.8rem;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(3, 55, 3);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 2000ms ease-in-out;
+
+}
+ /* div.item-list > div.confirm > button.cancel */
+.item-list .confirm button.cancel{
+    color: rgb(3, 55, 3);
+    background-color: white;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 1.5rem;
+    margin: 0 auto;
+    background-color: rgb(48, 13, 13);
+    color: white;
+    font-size: 1.4rem;
+}
+
+.remove-deleted {
+    transform: scale(0.8) translateY(5rem) ;
+    opacity: 0;
+}
+
+/* remove scrollbar */
+
+::-webkit-scrollbar{
+    display: none;
+}
+/* media query mobile view */
+@media screen and (max-width: 768px){
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+    .wrapper header{
+    display: none;
+    }
+    .wrapper .sidebar-panel{
+        display: none;
+    }
+    .wrapper .cards{
+        grid-template-columns: 1fr;
+    }
+    .right{
+        display: none;
+    }
+
+}

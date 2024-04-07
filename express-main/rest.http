@@ -1,0 +1,76 @@
+###
+POST http://localhost:5151/api/auth
+Content-Type: application/json
+
+{
+    "password" : "Isaac",
+    "email" : "yeboah@mail.com"
+}
+
+###
+GET http://localhost:5151/admin
+
+
+###
+POST http://localhost:5151/api/logout
+Content-Type: application/json
+
+
+###
+POST http://localhost:9222/api/user
+Content-Type: application/json
+
+{
+    "name" : "Isaac",
+    "email" : "yeboah@mail.com",
+    "password" :"admin1234"
+}
+
+###
+GET https://kojoyeboah53i-d962a2da663c.herokuapp.com/api/ordabl/employer/1
+
+###
+GET http://localhost:9222/all-products
+###
+GET http://localhost:9222/api/products
+
+###
+POST http://localhost:9222/shop/v1/customer
+Content-Type: application/json
+
+{
+    "name" : "Isaac Yeboah",
+    "city" : "Accra",
+    "token" :"admin1234sfdsfsfd454632122345%^&*£"
+}
+
+###
+GET http://localhost:9222/shop/v1/products
+###
+GET http://localhost:9222/shop/v1/customers
+
+###
+GET http://localhost:9222/shop/v1/orderWithC/1
+
+###
+POST http://localhost:9222/shop/v1/orderWithCustomerId
+Content-Type: application/json
+
+{
+    "customer_id" : 12
+}
+
+
+###
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "auth" : true
+}
+
+###
+GET https://kojoyeboah53i-d962a2da663c.herokuapp.com/api/sanbox
+
+###
+GET https://api.spoonacular.com/recipes/random?apiKey=e2c65e81d0e04e9e9821c8846ff7a1a2

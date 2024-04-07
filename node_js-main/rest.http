@@ -1,0 +1,16 @@
+###
+POST http://localhost:5151/api/auth
+Content-Type: application/json
+
+{
+    "password" : "Isaac",
+    "email" : "yeboah@mail.com"
+}
+
+###
+GET http://localhost:5151/admin
+
+
+###
+POST http://localhost:5151/api/logout
+Content-Type: application/json

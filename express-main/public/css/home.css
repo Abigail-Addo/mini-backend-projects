@@ -1,0 +1,119 @@
+    .home{
+       
+   
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .meals{
+        margin-top: 1.7rem;
+        width: 100%;
+        padding: 1rem 1.7rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(157, 155, 155, 0.299);
+        /* scale: 0.9; */
+        transition: 1sec ease-in-out;
+    }
+
+    .meals .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        padding: 0.9rem 1.3rem;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+    .meals .container .meal{
+        padding: 0.5rem 0.5rem;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        margin: 1rem;
+
+    }
+    .meals .container .meal img{
+        width: 13rem;
+        height: 13rem;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    .meals .container .meal .detail{
+        margin: 1rem;
+        width: 13rem;
+        padding: 0.5rem 0.5rem;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 1sec ease-in-out;
+    }
+
+    .meals .container .meal .detail .desc{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8rem 1rem;
+    }
+    /* .meals .container .meal .details button{ */
+    div.meals .container .meal .detail .description{
+        display: flex;
+        padding: 0.8rem 1rem;
+        align-items: center;
+    }
+
+div.main_content > div > div.meals > div > div > button {
+        padding: 0.8rem 1rem;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 1sec ease-in-out;
+         background-color: rgba(215, 10, 10, 0.673);
+        display: flex;
+        align-items: center;
+        margin: 1rem auto;
+        margin-left: 1rem;
+        width: 70%;
+
+    }
+
+div.main_content > div > div.meals > div > div > button:hover {
+        background-color: rgba(157, 155, 155, 0.299);
+    color: white;
+}
+
+/* media screen mobile screen and less */
+@media screen and (max-width: 756px) {
+    .meals .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .meals .container .meal img{
+        width: 15rem;
+        height: 15rem;
+       
+    }
+    .meals .container .meal .detail{
+        margin: 1rem;
+        width: 15rem;
+    }
+
+}

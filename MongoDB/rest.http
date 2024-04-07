@@ -1,0 +1,8 @@
+POST http://localhost:8040/api/create-user
+Content-Type: application/json
+
+{
+    "name" : "Abigail Addo",
+    "email" : "abigailadwoaaddo@gmail.com",
+    "password" :"nahnah3"
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        .nav{
+            width: 80%;
+            height: 5rem;
+            padding: 1.3rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffffd9;
+        }
+        .btn{
+            box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+	background-color:#ffc477;
+	border-radius:11px;
+	border:2px solid #eeb44f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:8px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #cc9f52;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1> Contact page</h1>
+        <button class="btn"> go back</button>
+    </div>
+    <div>
+        <ul>
+            <li> <a href="./about.html" target="_blank" rel="noopener noreferrer"></a> </li>
+        
+        </ul>
+    </div>
+    <script>
+        const btn = document.querySelector('.btn');
+        btn.addEventListener('click', () =>{
+            window.location.href = './index.html'
+        })
+    </script>
+
+</body>
+</html>

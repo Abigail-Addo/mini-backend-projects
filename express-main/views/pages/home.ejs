@@ -1,0 +1,84 @@
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/home.css">
+<div class="wrapper">
+    <div class="sidebar">
+   
+   
+        <%- include('../layouts/sidebar', {PageName: 'home'}) %>
+        
+    </div>
+    <div class="main_content">
+        <div class="questionnaire">
+            <div class="heading">
+                <h1>What would you like to order?</h1>
+            </div>
+            <div class="menu-items">
+                <select name="options" id="options">
+                    <% kitchen.forEach(cuisine => { %>
+                        <option value=<%= cuisine %> ><%= cuisine %></option>
+                    <% }) %>
+                  </select>
+            </div>
+      
+            <div class="meals">
+                <div class="container">
+               
+                    <% meals.forEach(meal => { %>
+                        <div class="meal">
+                            <img src=<%= meal.image %> alt="">
+                            <div class="detail"> 
+                             <div class="desc">
+                                <h3><%= meal.name %></h3>
+                                <h3><%= meal.price %></h3>
+                             </div>
+                             <div class="description">
+                                 <p><%= meal.description %></p>
+                                 </div>
+                            </div>
+                            <button class="order" id=<%= meal.id %>> order</button>
+                           
+                         </div>
+                         <% }) %>
+                  
+              
+              
+                  
+                </div>
+
+        </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="header">
+            <h1>Your Order</h1>
+        </div>
+        <div class="item-list">
+            <hr>
+            <div class="heading">
+                <h3 class="first">Item</h3>
+                <h3>Qty</h3>
+                <h3>Price</h3>
+            </div>
+            <hr>
+            <div class="container">
+
+    
+        </div>
+        <hr>
+            <div class="total">
+                <h3>Total</h3>
+                <h3 class="price">21.90</h3>
+            </div>
+   
+            <hr>
+            <div class="confirm">
+                <button class="cancel">Cancel</button>
+                <button class="confirmed">Order</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+</div>
+
+<script src="js/home.js"></script>

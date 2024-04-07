@@ -1,0 +1,58 @@
+###
+# get by customer id orders
+GET http://localhost:7070/shop/v1/orderWithCustomerId
+
+###
+# get all orders
+GET http://localhost:7070/shop/v1/orders
+
+
+###
+# get one order by id
+GET http://localhost:7070/shop/v1/order/6
+
+###
+# create a new order 
+POST http://localhost:7070/shop/v1/order
+Content-Type: application/json
+
+{
+    "customer_id": 1,
+    "price": 400,
+    "product_id":9,
+}
+
+###
+# create a new order with customer id
+POST http://localhost:7070/shop/v1/orders-with-customerId
+Content-Type: application/json
+
+{
+    "customer_id": 1,
+    "price": 400.00,
+    "product":"Hair brush"
+}
+
+###
+# delete an order by id
+DELETE http://localhost:7070/shop/v1/deleteAnOrder/1
+
+###
+# update an order by id
+PATCH  http://localhost:7070/shop/v1/order/1
+Content-Type: application/json
+
+{
+    "customer_id": 1,
+    "price": 500.00,
+    "product":"Brazillian Hair"
+}
+
+###
+GET http://localhost:7070/store-image
+
+###
+GET http://localhost:7070/all-products
+
+###
+GET http://localhost:7070/shop/v1/products

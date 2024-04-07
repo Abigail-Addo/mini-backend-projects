@@ -1,0 +1,11 @@
+###
+GET http://localhost:5000/
+
+
+###
+POST http://localhost:5000/result/student
+Content-Type: application/json
+
+{
+    "reaction" : 50
+}

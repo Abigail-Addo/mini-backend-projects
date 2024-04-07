@@ -1,0 +1,34 @@
+###
+POST http://localhost:2220/api/users
+Content-Type: application/json
+
+{
+    "name": "Kojo",
+    "gender": "male",
+    "email": "kojo@mail.com",
+    "address": "Nungua",
+    "literate": false
+}
+
+
+### 
+GET http://localhost:2220/api/users
+
+
+### 
+GET http://localhost:2220/api/users/1
+
+### 
+DELETE  http://localhost:2220/api/users/7
+
+###
+PATCH  http://localhost:2220/api/users/1
+Content-Type: application/json
+
+{
+    "name": "Kojo",
+    "gender": "male",
+    "email": "k7ojo@mail.com",
+    "address": "Nungua",
+    "literate": false
+}
